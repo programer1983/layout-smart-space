@@ -5,6 +5,16 @@ body {
     color: #333333;
 }
 
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    flex: 1 1 auto;
+}
+
 [class*= "__container"]{
     max-width: 1200px;
     margin: 0 auto;
@@ -14,10 +24,11 @@ body {
 @media (max-width: 1199.98px) {
     [class*= "__container"]{
         max-width: 970px;
+        overflow: hidden;
     } 
 }
 
-@media (max-width: 990.98px) {
+@media (max-width: 991.98px) {
     [class*= "__container"]{
         max-width: 750px;
     } 
@@ -28,3 +39,5 @@ body {
         max-width: none;
     } 
 }
+
+
